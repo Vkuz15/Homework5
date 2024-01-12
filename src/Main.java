@@ -25,5 +25,21 @@ public class Main {
         } else {
             System.out.println(year + " год не является високосным");
         }
+
+        // Задача 4
+
+        int deliveryDistance = 100;
+        int days = 1;
+        if (deliveryDistance >= 0 && deliveryDistance <= 20) {
+            System.out.println("Потребуется дней " + days);
+        } else if (deliveryDistance >= 21 && deliveryDistance <= 60) {
+            int day = days + 1;
+            System.out.println("Потребуется дней " + day);
+        } else if (deliveryDistance >= 61 && deliveryDistance <= 100) {
+            int day = days + 2;
+            System.out.println("Потребуется дней " + day);
+        } else {
+            System.out.println("Свыше 100 км доставки нет");
+        }
     }
 }
