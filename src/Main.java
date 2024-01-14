@@ -41,5 +41,25 @@ public class Main {
         } else {
             System.out.println("Свыше 100 км доставки нет");
         }
+
+        // Задача 5
+
+        int monthNumber = 9;
+        switch (monthNumber) {
+            case 1, 2, 12:
+                System.out.println("Зимний сезон");
+                break;
+            case 3, 4, 5:
+                System.out.println("Весенний сезон");
+                break;
+            case 6, 7, 8:
+                System.out.println("Летний сезон");
+                break;
+            case 9, 10, 11:
+                System.out.println("Осенний сезон");
+                break;
+            default:
+                System.out.println("Недопустимое значение");
+        }
     }
 }
